@@ -19,7 +19,7 @@
 .d-flex{display: flex;}
 .d-block{display: block ;}
 .d-none{display: none;}
-.contain{width: 1200px; margin: 0 auto;}
+
 .justify-content-between{justify-content: space-between;}
 .align-center{align-items: center;}
 .m-auto{margin: 0 auto;}
@@ -31,23 +31,30 @@
 
 
 
-/* 웹기능사 A형 시험때 필요한 것 */
+/* 웹기능사 C-2형 시험때 필요한 것 */
 .h100{height: 100px;}
 .h200{height: 200px;}
 .h300{height: 300px;}
 
+.contain{max-width:var(--cwidth)}
+
 .bgr{background-color: red;}
-header{align-items: end;}
-.d1a{ line-height: 60px; font-size: 26px; text-align: center; min-width: 120px;}
+
+header{width: 200px;}
+.right{width: 800px;}
+.d1a{ line-height: 2; font-size: 20px;}
+
 #gnb> li:hover .d1a{color: white; background-color: green;}
 .d2{ height: 0; overflow: hidden; background-color: green; transition: height 0.5s;
-	 font-size: 18px; line-height: 2; left: 0; right: 0; top: 100%; 
-	 min-width: 120px; text-align: center;
+	 font-size: 18px; line-height: 2; text-align: center; left: 100%; top: -30px; width: 200px;
 }
 .d2 a{ color: white; }
-#gnb> li:hover .d2{height: 180px;}
+
+#gnb li:hover .d2{height: 180px;}
+#gnb li:nth-child(2):hover.d2{height: 80px; top: -10px;}
+
+
+
 .d2 li:hover{ background-color: white;}
 .d2 li:hover a{color: black;}
 
-
-#slider{}
