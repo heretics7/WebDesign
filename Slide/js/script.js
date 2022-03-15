@@ -40,15 +40,10 @@ $(document).ready(function(){
     
 
   },3000)
-  
+
+  var on = "on";
 
   $("#btn1").click( function(){
-    $("#slider_left").toggleClass("d-block");
-  })
-  $("#btn2").click( function(){
-    $("#slider_top").toggleClass("d-block");
-  })
-  $("#btn3").click( function(){
-    $("#slider_fade").toggleClass("d-block");
+    $("#slider li").eq(0).addClass(on).siblings().removeClass(on)
   })
 })
