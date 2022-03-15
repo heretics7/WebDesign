@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-  /* slider-left */
+  /* Slide-left */
   
   var widthMv = $("#slider_left").width();
   var dir = -1;
@@ -14,7 +14,7 @@ $(document).ready(function(){
 
   },3000)
 
-  /* slider-top */
+  /* Slide-top */
   
   var heightMv = $("#slider_top").height();
 
@@ -40,6 +40,15 @@ $(document).ready(function(){
     
 
   },3000)
+  
 
-
+  $("#btn1").click( function(){
+    $("#slider_left").toggleClass("d-block");
+  })
+  $("#btn2").click( function(){
+    $("#slider_top").toggleClass("d-block");
+  })
+  $("#btn3").click( function(){
+    $("#slider_fade").toggleClass("d-block");
+  })
 })

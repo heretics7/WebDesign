@@ -10,7 +10,7 @@ li{list-style: none;}
 .container{width: var(--abwidth);}
 .m-auto{margin: 0 auto;}
 .d-flex{display: flex;}
-.d-block{display: block;}
+.d-block{display: block !important;}
 .d-none{display: none;}
 .b-top{border-top:2px solid black ;}
 .b-bottom{border-bottom: 2px solid black;}
@@ -27,49 +27,13 @@ li{list-style: none;}
 .h100{height: 100px;}
 .h200{height: 200px;}
 .h300{height: 300px}
-/*layout*/
-#hd .d1a{
-    line-height: 60px; 
-    font-size: 26px; 
-    min-width: 120px;
-    text-align: center;
-}
-#hd {align-items: end;}
-#gnb .d1li:hover .d1a{
-    color: white;
-    background-color: green;}
-.d2ul {
-    height: 0; 
-    overflow: hidden;
-    background-color: green;
-    transition: height 0.5s;
-    font-size: 18px;
-    line-height: 2;
-    left: 0; right: 0;
-    top: 100%;
-    min-width: 120px;
-    text-align: center;  
-    }
+.mt1{margin-top: 1em;}
 
-#gnb:hover .d2ul {
-    height: 180px;
-    z-index: 9999;
-} 
-#gnb:after{content: '';
-    position: absolute;
-    background-color: green;
-    top: 100px; left: 0; right: 0;
-    height: 0px; transition: height 0.5s;}
-#gnb:hover:after{
-    height: 180px;
-}
-
-.d2ul a{color: white;}
-.d2ul li:hover{background-color: white;}
-.d2ul li:hover a {color: black;}
-
+/* button */
 
 p{ font-size: 32px; line-height: 3;}
+button{  }
+/* slide */
 
 #slider_fade li{ top:0; left: 0; width: 100%; height: 100%; opacity: 0; visibility: hidden; transition: 0.5s;}
 #slider_fade li.show{ opacity: 1; visibility: visible;}
