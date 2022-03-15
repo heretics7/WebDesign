@@ -28,7 +28,6 @@
 .b-top{border-top: 2px solid black;}
 .b-bottom{border-bottom: 2px solid black;}
 
-
 /* header_1 */
 
 #hd_1 {align-items: end;}
@@ -92,7 +91,7 @@
 .d2ul_2 li:hover{background-color: white;}
 .d2ul_2 li:hover a {color: black;}
 
-/* header_3*/
+/* header_3 */
 
 #hd_3 .d1a_3{
     line-height: 60px; 
@@ -134,12 +133,13 @@
 .d2ul_3 li:hover{background-color: white;}
 .d2ul_3 li:hover a {color: black;}
 
-/*layout*/
+/* header_4 */
+
 #hd_4 .d1a_4{
     line-height: 2; 
     font-size: 20px; 
 }
-#hd_4 {width: 200px;}
+.left_4 {width: 200px;}
 .right_4{width: 800px;}
 
 #gnb_4 .d1li_4:hover .d1a_4{
@@ -166,12 +166,13 @@
 .d2ul_4 li:hover{background-color: white;}
 .d2ul_4 li:hover a {color: black;}
 
-/*layout*/
+/* header_5 */
+
 #hd_5 .d1a_5{
     line-height: 2; 
     font-size: 20px; 
 }
-#hd_5 {width: 200px;}
+.left_5{width: 200px;}
 .right_5{width: 800px;}
 
 #gnb_5 .d1li_5:hover .d1a_5{
@@ -200,3 +201,9 @@
 .d2ul_5 a{color: white;}
 .d2ul_5 li:hover{background-color: white;}
 .d2ul_5 li:hover a {color: black;}
+
+
+button{ background-color: white;}
+p{ line-height: 2; padding: 0 1em; font-size: 18px;}
+#bd header{ display: none !important; }
+#bd header.on{ display: flex !important;}

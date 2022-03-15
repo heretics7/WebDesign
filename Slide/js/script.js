@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-  /* Slide-left */
+  /* slider-left */
   
   var widthMv = $("#slider_left").width();
   var dir = -1;
@@ -14,7 +14,7 @@ $(document).ready(function(){
 
   },3000)
 
-  /* Slide-top */
+  /* slider-top */
   
   var heightMv = $("#slider_top").height();
 
@@ -27,7 +27,8 @@ $(document).ready(function(){
 
   },3000)
 
-  /* Fade */
+  /* slider-fade */
+
   var classNm = "show";
   var count = 0;
   var total = $("#slider_fade li").length;
@@ -41,9 +42,21 @@ $(document).ready(function(){
 
   },3000)
 
-  var on = "on";
+  /* button */
 
-  $("#btn1").click( function(){
-    $("#slider li").eq(0).addClass(on).siblings().removeClass(on)
+  var classOn = "on";
+
+  $("#btn1").click(function(){
+    $("#slider div").eq(0).removeClass(classOn).siblings().addClass(classOn)
   })
+  $("#btn2").click(function(){
+    $("#slider div").eq(1).removeClass(classOn).siblings().addClass(classOn)
+  })
+  $("#btn3").click(function(){
+    $("#slider div").eq(2).removeClass(classOn).siblings().addClass(classOn)
+  })
+  $("#btnAll").click(function(){
+    $("#slider div").removeClass(classOn)
+  })
+
 })
