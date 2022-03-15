@@ -1,0 +1,202 @@
+/* reset */
+
+*{							
+	margin: 0 auto;			
+	padding: 0 ;
+	list-style: none;
+	text-decoration: none;
+	color: black;
+	}
+
+/* 공통클래스 */
+
+:root{
+	--abwidth : 1200px; /* A,B형 컨테이너 */
+	--cwidth : 1000px; /* c형 컨테이너 */
+}
+.abs{position: absolute ;}
+.rel{position: relative ;}
+.d-flex{display: flex;}
+.d-block{display: block ;}
+.d-none{display: none;}
+.container{width: 1200px; margin: 0 auto;}
+.justify-content-between{justify-content: space-between;}
+.align-center{align-items: center;}
+.m-auto{margin: 0 auto;}
+.w-100{width: 100px;}
+.text-center{text-align: center;}
+.b-top{border-top: 2px solid black;}
+.b-bottom{border-bottom: 2px solid black;}
+
+
+/* header_1 */
+
+#hd_1 {align-items: end;}
+#hd_1 .d1a_1{
+    line-height: 60px; 
+    font-size: 26px; 
+    min-width: 120px;
+    text-align: center;
+}
+#gnb_1 .d1li_1:hover .d1a_1{
+    color: white;
+    background-color: green;}
+.d2ul_1 {
+    height: 0; 
+    overflow: hidden;
+    background-color: green;
+    transition: height 0.5s;
+    font-size: 18px;
+    line-height: 2;
+    left: 0; right: 0;
+    top: 100%;
+    min-width: 120px;
+    text-align: center;
+    }
+#gnb_1 .d1li_1:hover .d2ul_1 {
+    height: 180px;
+} 
+.d2ul_1 a{color: white;}
+.d2ul_1 li:hover{background-color: white;}
+.d2ul_1 li:hover a {color: black;}
+
+/* header_2*/
+
+#hd_2 .d1a_2{
+    line-height: 60px; 
+    font-size: 26px; 
+    min-width: 120px;
+    text-align: center;
+}
+#hd_2 {align-items: end;}
+#gnb_2 .d1li_2:hover .d1a_2{
+    color: white;
+    background-color: green;}
+.d2ul_2 {
+    height: 0; 
+    overflow: hidden;
+    background-color: green;
+    transition: height 0.5s;
+    font-size: 18px;
+    line-height: 2;
+    left: 0; right: 0;
+    top: 100%;
+    min-width: 120px;
+    text-align: center;
+    }
+
+#gnb_2:hover .d2ul_2 {
+    height: 180px;
+} 
+.d2ul_2 a{color: white;}
+.d2ul_2 li:hover{background-color: white;}
+.d2ul_2 li:hover a {color: black;}
+
+/* header_3*/
+
+#hd_3 .d1a_3{
+    line-height: 60px; 
+    font-size: 26px; 
+    min-width: 120px;
+    text-align: center;
+}
+#hd_3 {align-items: end;}
+#gnb_3 .d1li_3:hover .d1a_3{
+    color: white;
+    background-color: green;}
+.d2ul_3 {
+    height: 0; 
+    overflow: hidden;
+    background-color: green;
+    transition: height 0.5s;
+    font-size: 18px;
+    line-height: 2;
+    left: 0; right: 0;
+    top: 100%;
+    min-width: 120px;
+    text-align: center;  
+    }
+
+#gnb_3:hover .d2ul_3 {
+    height: 180px;
+    z-index: 9999;
+} 
+#gnb_3:after{content: '';
+    position: absolute;
+    background-color: green;
+    top: 100%; left: 0; right: 0;
+    height: 0px; transition: height 0.5s;}
+#gnb_3:hover:after{
+    height: 180px;
+}
+
+.d2ul_3 a{color: white;}
+.d2ul_3 li:hover{background-color: white;}
+.d2ul_3 li:hover a {color: black;}
+
+/*layout*/
+#hd_4 .d1a_4{
+    line-height: 2; 
+    font-size: 20px; 
+}
+#hd_4 {width: 200px;}
+.right_4{width: 800px;}
+
+#gnb_4 .d1li_4:hover .d1a_4{
+    color: white;
+    background-color: green;}
+.d2ul_4 {
+    height: 0; 
+    overflow: hidden;
+    background-color: green;
+    transition: height 0.5s;
+    font-size: 18px;
+    line-height: 2;
+    text-align: center;  
+    }
+
+#gnb_4 .d1li_4:hover .d2ul_4 {
+    height: 180px;
+} 
+#gnb_4 .d1li_4:nth-child(2):hover .d2ul_4 {
+    height: 80px;
+} 
+
+.d2ul_4 a{color: white;}
+.d2ul_4 li:hover{background-color: white;}
+.d2ul_4 li:hover a {color: black;}
+
+/*layout*/
+#hd_5 .d1a_5{
+    line-height: 2; 
+    font-size: 20px; 
+}
+#hd_5 {width: 200px;}
+.right_5{width: 800px;}
+
+#gnb_5 .d1li_5:hover .d1a_5{
+    color: white;
+    background-color: green;}
+.d2ul_5 {
+    height: 0; 
+    overflow: hidden;
+    background-color: green;
+    transition: height 0.5s;
+    font-size: 18px;
+    line-height: 2;
+    text-align: center;
+    left: 100%; top:-50px;
+    width: 200px;  
+    }
+
+#gnb_5 .d1li_5:hover .d2ul_5 {
+    height: 180px;
+} 
+#gnb_5 .d1li_5:nth-child(2):hover .d2ul_5 {
+    height: 80px;
+    top: -10px;
+} 
+
+.d2ul_5 a{color: white;}
+.d2ul_5 li:hover{background-color: white;}
+.d2ul_5 li:hover a {color: black;}
