@@ -1,0 +1,134 @@
+@charset 'UTF-8';
+
+* {padding: 0; margin: 0; box-sizing: border-box;
+   font-family: '맑은 고딕', sans-serif; color:#333333;}
+
+ul{list-style: none;}
+a{text-decoration: none; color: inherit;}
+.wrap{width: 1200px; margin: 0 auto;}
+
+.d-flex{display: flex;}
+.align-center{align-items: center;}
+.abs{position: absolute;}
+.rel{position: relative;}
+
+/******************************************/
+#hd{
+   height: 100px;
+   align-items: center;
+   justify-content: space-between;
+   text-align: center;
+}
+#hd h1{
+   width: 200px;
+   height: 40px;
+}
+#hd > ul{
+   width: 600px;
+   justify-content: space-around;
+}
+#hd ul a{
+   display: block;
+   text-align: center;
+   background: #fff;
+   font-size: 18px;
+   padding: 10px;
+   min-width: 150px;
+}
+#hd .d2ul{
+   height: 0;
+   overflow: hidden;
+   transition: height 0.5s;
+   left: 0; right: 0;
+   top: 100%;
+   text-align: center;
+}
+.d1a{
+   font-weight: bold;
+}
+#hd .d1li:hover .d2ul{
+   height: 180px;
+}
+#hd .d1li:hover > a{
+   background-color: rgb(199, 101, 101);
+   color: #fff;
+}
+#hd .d2ul li:hover a{
+   background-color: rgb(230, 152, 152);
+   color: #fff;
+}
+/******************************************/
+
+#slide{
+   height: 300px;
+   overflow: hidden;
+   margin: 0 auto;
+}
+
+/******************************************/
+
+/*tab*/
+
+#contents{
+   height: 200px;
+}
+
+#contents > div{
+   width: 400px;
+}
+#contents .tab div{
+   height: 32px;
+   background-color: #ccc;
+}
+#contents .tab h3{
+   line-height: 2;
+   padding: 0 10px;
+   cursor: pointer;
+}
+#contents .tab ul{
+   width: 100%;
+   top:32px;
+   height: 168px;
+   left:0;  
+   display: none;
+}
+.notice ul{
+   flex-direction: column;
+}
+.notice li{
+   padding: 10px;
+   justify-content: space-between;
+   border-bottom: 1px solid #ccc;
+}
+.notice li:hover a{
+   text-decoration: underline;
+}
+.gallery ul{
+   padding: 10px;
+   justify-content: space-around;
+   align-items: center;
+}
+#contents .tab div.on{
+   background: rgb(255, 245, 245);
+}
+#contents .tab div.on h3{
+   color:red
+}
+#contents .tab div.on ul{
+   display: flex;
+   background: rgb(255, 245, 245);
+}
+
+footer{display: flex; height: 100px; align-items: center; background: #eee;}
+footer > h3 a{display: block; width: 200px; height: 40px; font-size: 0px; color:transparent;}
+footer p{width:70%; text-align: center;}
+footer .sns a img{display: inline-block; width:20px; margin-left: 20px;}
+
+.popUpModal{position:fixed; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index:998; display: none; }
+.popUpBox{position:absolute; width: 100%; height: 100%; z-index:999; display: none;}
+.popUpBox1{position:absolute; width: 100%; height: 100%; z-index:999;}
+.popUp{position:absolute; width:600px;  left:50%; top:50%; transform: translate(-50%, -50%); 
+      text-align: center; line-height: 2; border: 1px solid #000; background: #fff; padding:20px;}
+.popUp p{font-size: 15px; margin-top: 10px;}
+.popUp div{margin-top: 30px;}
+.popUp button{float: right; padding:4px; cursor: pointer;}
